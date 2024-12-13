@@ -1,6 +1,10 @@
 "use client"
 import React, { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
+import CloseButton from '../../../public/images/closebutton.png';
+import CloseButtonHover from '../../../public/images/closebutton-hover.png';
+import ImageDef from '../../../public/images/State=Default.png';
+import Hover from '../../../public/images/State=Hover.png';
 
 const Card = () => {
   const [hoveredStarIndex, setHoveredStarIndex] = useState<number | null>(null); 
@@ -79,7 +83,7 @@ const Card = () => {
       >
         <div className='flex justify-end mb-[16px]'>
           <Image 
-            src={isHovered ? "/images/closeButton-hover.png" : "/images/closeButton.png"} 
+            src={isHovered ? CloseButtonHover : CloseButton} 
             alt="reload" 
             width={32} 
             height={24}
@@ -101,7 +105,7 @@ const Card = () => {
             index > 0 && (  
               <Image 
                 key={index}
-                src={hoveredStarIndex !== null && (hoveredStarIndex >= index || (rating !== null && rating >= index)) ? "/images/state=hover.png" : "/images/state=default.png"}  
+                src={hoveredStarIndex !== null && (hoveredStarIndex >= index || (rating !== null && rating >= index)) ? Hover : ImageDef}  
                 alt="star"
                 width={48} 
                 height={48}
