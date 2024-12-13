@@ -95,13 +95,12 @@ const Card = () => {
           Bon, j&apos;espère que tu vas mettre 5 évidemment. Si ce n&apos;est pas le cas, viens me dire pourquoi !
         </div>
 
-
         <div className="flex justify-center mb-6">
           {new Array(totalStars).fill(null).map((_, index) => (
             index > 0 && (  
               <img 
                 key={index}
-                src={hoveredStarIndex >= index || rating >= index ? "/state=hover.png" : "/state=default.png"}  
+                src={hoveredStarIndex !== null && (hoveredStarIndex >= index || rating >= index) ? "/state=hover.png" : "/state=default.png"}  
                 alt="star"
                 className="cursor-pointer transition-transform transform duration-300 hover:scale-110"  
                 onMouseEnter={() => handleMouseEnter(index)} 
