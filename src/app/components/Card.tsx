@@ -100,7 +100,7 @@ const Card = () => {
             index > 0 && (  
               <img 
                 key={index}
-                src={hoveredStarIndex !== null && (hoveredStarIndex >= index || rating >= index) ? "/state=hover.png" : "/state=default.png"}  
+                src={hoveredStarIndex !== null && (hoveredStarIndex >= index || (rating !== null && rating >= index)) ? "/state=hover.png" : "/state=default.png"}  
                 alt="star"
                 className="cursor-pointer transition-transform transform duration-300 hover:scale-110"  
                 onMouseEnter={() => handleMouseEnter(index)} 
