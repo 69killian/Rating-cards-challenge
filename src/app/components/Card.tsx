@@ -1,5 +1,6 @@
 "use client"
 import React, { useState, useEffect, useRef } from 'react';
+import Image from 'next/image';
 
 const Card = () => {
   const [hoveredStarIndex, setHoveredStarIndex] = useState<number | null>(null); 
@@ -57,7 +58,6 @@ const Card = () => {
       setRatingsHistory(JSON.parse(savedHistory)); // localStorage
     }
 
-    
     document.addEventListener('click', handleClickOutside);
 
     const timer = setTimeout(() => {
@@ -72,16 +72,17 @@ const Card = () => {
 
   return (
     <div className="flex flex-col lg:flex-row items-center justify-center lg:space-x-8 h-screen">
-
      
       <section 
         ref={cardRef} 
         className={`bg-white w-[353px] h-auto p-6 rounded-[8px] shadow-lg border border-gray-300 transition-opacity duration-1000 ${isLoaded ? 'opacity-100' : 'opacity-0'}`}
       >
         <div className='flex justify-end mb-[16px]'>
-          <img 
+          <Image 
             src={isHovered ? "/images/closeButton-hover.png" : "/images/closeButton.png"} 
             alt="reload" 
+            width={32} 
+            height={24}
             className="cursor-pointer" 
             onClick={handleCloseButtonClick}
             onMouseEnter={handleMouseEnterClose}  
@@ -98,10 +99,12 @@ const Card = () => {
         <div className="flex justify-center mb-6">
           {new Array(totalStars).fill(null).map((_, index) => (
             index > 0 && (  
-              <img 
+              <Image 
                 key={index}
                 src={hoveredStarIndex !== null && (hoveredStarIndex >= index || (rating !== null && rating >= index)) ? "/images/state=hover.png" : "/images/state=default.png"}  
                 alt="star"
+                width={48} 
+                height={48}
                 className="cursor-pointer transition-transform transform duration-300 hover:scale-110"  
                 onMouseEnter={() => handleMouseEnter(index)} 
                 onMouseLeave={handleMouseLeave}
