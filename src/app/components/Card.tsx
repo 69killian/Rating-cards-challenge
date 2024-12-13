@@ -80,7 +80,7 @@ const Card = () => {
       >
         <div className='flex justify-end mb-[16px]'>
           <img 
-            src={isHovered ? "/closeButton-hover.png" : "/closeButton.png"} 
+            src={isHovered ? "/images/closeButton-hover.png" : "/images/closeButton.png"} 
             alt="reload" 
             className="cursor-pointer" 
             onClick={handleCloseButtonClick}
@@ -100,7 +100,7 @@ const Card = () => {
             index > 0 && (  
               <img 
                 key={index}
-                src={hoveredStarIndex !== null && (hoveredStarIndex >= index || (rating !== null && rating >= index)) ? "/state=hover.png" : "/state=default.png"}  
+                src={hoveredStarIndex !== null && (hoveredStarIndex >= index || (rating !== null && rating >= index)) ? "/images/state=hover.png" : "/images/state=default.png"}  
                 alt="star"
                 className="cursor-pointer transition-transform transform duration-300 hover:scale-110"  
                 onMouseEnter={() => handleMouseEnter(index)} 
