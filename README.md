@@ -3,7 +3,7 @@
 # (FR) Rating Cards Challenge - Semaine Spikes 
 
 ## Aperçu  
-![screenshot](screen.png)
+![screenshot](screenshot.png)
 
 Cette semaine, on s'attarde sur ce petit **Spikes Challenge** de cartes de notation par étoiles,
 contenant un historique des notes inscrites. Le but était d'implémenter une solution rapide de notation et de sauvegarde pour un projet de petit volume en NextJs.
@@ -24,7 +24,7 @@ contenant un historique des notes inscrites. Le but était d'implémenter une so
 # (EN) Rating Cards Challenge - Spikes Week  
 
 ## Overview  
-![screenshot](screen.png)  
+![screenshot](screenshot.png)  
 
 This week, the focus is on this small **Spikes Challenge** of star rating cards,  
 featuring a history of submitted ratings. The goal was to implement a quick rating and saving solution for a small-scale project using Next.js.  
