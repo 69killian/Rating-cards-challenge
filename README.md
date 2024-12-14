@@ -1,4 +1,57 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+
+
+# (FR) Rating Cards Challenge - Semaine Spikes 
+
+## Aperçu  
+![screenshot](screen.png)
+
+Cette semaine, on s'attarde sur ce petit **Spikes Challenge** de cartes de notation par étoiles,
+contenant un historique des notes inscrites. Le but était d'implémenter une solution rapide de notation et de sauvegarde pour un projet de petit volume en NextJs.
+
+## Fonctionnalités  
+
+- 💾 **Sauvegarde des notes dans le LocalStorage** : Les notes données par l'utilisateur sont sauvegardées localement pour être conservées entre les sessions 
+- 📜 **Affichage de l'historique des notes** : Une liste des notes précédemment données est affichée en temps réel  
+- 🔄 **Bouton de réinitialisation** : Permet de remettre l'application à zéro pour recommencer à noter
+- 🎨 **Design responsive** : L'applicatio possède une interface adaptative aux différents écrans grâce à Tailwind
+
+### Démo en ligne  
+👉 [![Lien vers la démo]()](https://rating-cards-challenge.vercel.app/)  
+
+
+<br><br><br><br><br><br><br><br><br>
+
+# (EN) Rating Cards Challenge - Spikes Week  
+
+## Overview  
+![screenshot](screen.png)  
+
+This week, the focus is on this small **Spikes Challenge** of star rating cards,  
+featuring a history of submitted ratings. The goal was to implement a quick rating and saving solution for a small-scale project using Next.js.  
+
+## Features  
+
+- 💾 **Save ratings in LocalStorage**: User ratings are stored locally to persist between sessions  
+- 📜 **Display rating history**: There is a real-time list of previously submitted ratings  
+- 🔄 **Reset button**: This reset button allows users to reset the application and start rating again
+- 🎨 **Responsive design**: The app features a responsive interface adaptable to different screen sizes, thanks to Tailwind 
+
+### Live Demo  
+👉 [![Demo Link]()](https://rating-cards-challenge.vercel.app/)  
+
+
+<br><br><br><br><br><br><br><br><br>
+
+
+
+
+
+
+
+
+
+
+
 
 ## Getting Started
 
