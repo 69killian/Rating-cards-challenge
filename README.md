@@ -10,7 +10,7 @@ contenant un historique des notes inscrites. Le but était d'implémenter une so
 
 ## Fonctionnalités  
 
-- 💾 **Sauvegarde des notes dans le LocalStorage** : Les notes données par l'utilisateur sont sauvegardées localement pour être conservées entre les sessions 
+- 💾 **Sauvegarde des notes par LocalStorage** : Les notes données par l'utilisateur sont sauvegardées localement pour être conservées entre les sessions 
 - 📜 **Affichage de l'historique des notes** : Une liste des notes précédemment données est affichée en temps réel  
 - 🔄 **Bouton de réinitialisation** : Permet de remettre l'application à zéro pour recommencer à noter
 - 🎨 **Design responsive** : L'applicatio possède une interface adaptative aux différents écrans grâce à Tailwind
